@@ -37,20 +37,17 @@ output------->>Initializing Ruby Program
 
 
 
---CLASS in ruby.
-	
-  A class in Ruby always starts with the keyword class followed by the name of the class. The name should always be in initial capitals and it terminates with the keyword end. ex-The class Customer can be displayed as:
 
-class Customer
-end
 
+							VARIABLES N CONSTANTS
+							---------------------
 
 
 --Variables in a Ruby Class.
   
   Ruby provides four types of variables −
 
-    Local Variables − Local variables are the variables that are defined in a method. Local variables are not available outside the method. You will see more details about method in subsequent chapter. Local variables begin with a lowercase letter or _.
+    Local Variables − Local variables are the variables that are defined in a method. Local variables are not available outside the method.Local variables begin with a lowercase letter or _. Their values ramain intact until and unless they are't used outside the block in which they are defined.	
 
     Instance Variables − Instance variables are available across methods for any particular instance or object. That means that instance variables change from object to object. Instance variables are preceded by the at sign (@) followed by the variable name.
 
@@ -58,6 +55,24 @@ end
 
     Global Variables − Class variables are not available across classes. If you want to have a single variable, which is available across classes, you need to define a global variable. The global variables are always preceded by the dollar sign ($).
 
+
+
+--Ruby Constants-Constants begin with an uppercase letter. Constants defined within a class or module can be accessed from within that class or module, and those defined outside a class or module can be accessed globally. Their values generally are displayed by using, say for 'CON' we say---> puts "value of CON : #{CON}".Therefore result of any expression after calculation can be displayed using #{exp} in puts.
+
+
+
+
+
+							CLASS AND OBJECT
+							----------------
+
+
+--CLASS in ruby.
+	
+  A class in Ruby always starts with the keyword class followed by the name of the class. The name should always be in initial capitals and it terminates with the keyword end. ex-The class Customer can be displayed as:
+
+class Customer
+end
 
 
 --Creating Objects in Ruby using new Method
@@ -123,3 +138,43 @@ def display()
 		puts "Customer name #@cust_name"
 		puts "Customer address #@cust_addr"
 	end
+
+
+
+							OPERATORS
+							---------	
+
+operators are similar to that of C programming.The one which are different are mentioned below.
+
+Arithmatic:
+-->> a**b:mean a raise to the power b.
+
+Comparison:
+-->> ===: used to test equality. for ex- (1..10)===5 returns true 
+-->> .eql?:True if the receiver and argument have both the same type and equal values. ex-->> 1 == 1.0 returns true, but 1.eql?(1.0) is false.
+-->> equal?:True if the receiver and argument have the same object id. ex-->> if aObj is duplicate of bObj then aObj == bObj is true, a.equal?bObj is false but a.equal?aObj is true.
+
+Parallel Assignment:
+a = 10
+b = 20
+c = 30
+
+This may be more quickly declared using parallel assignment −
+
+a, b, c = 10, 20, 30
+
+Parallel assignment is also useful for swapping the values held in two variables −
+
+a, b = b, c
+
+
+
+							RANGE
+						        -----
+.. : '..' create a range including the argument as well.
+
+ex--->> (1..10) will give range from 1 to 10 including 10 as well.
+
+... : '...' this will exclude 10 from the range.
+
+producing range list in program---->> (1..10).to_a
