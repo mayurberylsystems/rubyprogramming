@@ -1,3 +1,4 @@
+=begin
 puts"my name is mayur saxena"
 END{
 	puts"the program ends here"
@@ -59,7 +60,7 @@ c2.display()
  end
 
 o1=Foodcave.new()
-o2=Foodcave.new()
+o2=Foodcave.new()    
 o3=Foodcave.new()
 o4=Foodcave.new()
 
@@ -85,5 +86,12 @@ require 'P8module2'
 y=Trig.sin(Trig::PI)
 z=Trig.cos(Trig::PI)
 Y=Moral.sin(Moral::BETTER)
+=end
 
+
+arr=Array.new
+arr=[6,5,4,9,8,7,1,2,3,4,5,6]
+puts "#{arr}"
+arr[0,0]=1
+puts "#{arr["tuoe"]}"
 
